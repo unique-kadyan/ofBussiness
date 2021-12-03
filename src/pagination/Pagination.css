@@ -1,0 +1,47 @@
+.pagination-container {
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+}
+.pagination-container a {
+    height: 100%;
+    color: #0366d6;
+    border: 1px solid #e1e4e8;
+    padding: 7px 17px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.pagination-container a.prev {
+    border-right-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.pagination-container a.next {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.pagination-container a.inner {
+    border-radius: 0;
+    border-right-width: 0;
+}
+.pagination-container a.inner.selected {
+    border-color: #0366d6;
+    background: #0366d6;
+    color: #fff;
+}
+.pagination-container a:hover {
+    background: #eff3f6;
+}
+.pagination-container a.disabled {
+    color: #d1d5da;
+    cursor: default;
+    background-color: #fafbfc;
+}
+.pagination-container a.disabled.selected {
+    border-color: #438cde;
+    background: #438cde;
+    color: #fff;
+}

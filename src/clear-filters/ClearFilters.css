@@ -1,0 +1,15 @@
+.clear-filters {
+  margin-bottom: 20px;
+  text-align: left;
+  color: #586069;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  cursor: pointer;
+}
+.clear-filters .icon {
+  margin-right: 3px;
+}
+.clear-filters:hover {
+  color: #0366d6;
+}

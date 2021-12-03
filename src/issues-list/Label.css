@@ -1,0 +1,13 @@
+.label-wrapper {
+  padding: 2px 4px;
+  border-radius: 2px;
+  margin-left: 4px;
+  height: 20px;
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 rgba(27, 31, 35, .12);
+}
+.label-wrapper span {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+}

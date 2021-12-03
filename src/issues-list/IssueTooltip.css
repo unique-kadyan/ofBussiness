@@ -1,0 +1,109 @@
+.issue-tooltip {
+  position: absolute;
+  top: -170px;
+  left: 0;
+  min-height: 100px;
+  min-width: 100px;
+  height: 160px;
+  width: 500px;
+  z-index: 1;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.issue-tooltip:before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  bottom: -16px;
+  display: inline-block;
+  border: 8px solid transparent;
+  border-top-color: rgba(27, 31, 35, 0.15);
+}
+.issue-tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 13px;
+  display: inline-block;
+  margin-left: 1px;
+  margin-top: -14px;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+}
+.issue-tooltip .head-info {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+.issue-tooltip .body-wrapper {
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.issue-tooltip .body-wrapper .right {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.issue-tooltip .body-wrapper .right .issue-title {
+  color: #24292e;
+  font-weight: 600;
+}
+.issue-tooltip .body-wrapper .right .issue-title span {
+  color: #586069;
+  font-weight: 400;
+}
+.issue-tooltip .body-wrapper .right .issue-description {
+  position: relative;
+  color: #586069;
+  max-height: 42px;
+  overflow: hidden;
+  padding-right: 9px;
+  word-break: break-all;
+}
+.issue-tooltip .body-wrapper .right .issue-description.long {
+  max-height: 84px;
+}
+.issue-tooltip .body-wrapper .right .issue-description:before {
+  content: "...";
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+}
+.issue-tooltip .body-wrapper .right .issue-description:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background: #fff;
+}
+.issue-tooltip .body-wrapper .right .issue-labels {
+  height: 24px;
+  padding-top: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.issue-tooltip .body-wrapper .right .issue-labels span {
+  padding: 2px 4px;
+  border-radius: 2px;
+  margin-left: 0;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  box-shadow: inset 0 -1px 0 rgba(27, 31, 35, .12);
+}
+.issue-tooltip .body-wrapper .right .issue-labels span:not(:first-child) {
+  margin-left: 4px;
+}
