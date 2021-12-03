@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.App .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.App .options span {
+  margin-left: 10px;
+}
+.no-issues, .error {
+  padding: 10px 5px;
+  font-size: 18px;
+  border: 1px solid #e1e4e8;
+  width: calc(100% - 10px);
+}
+.error {
+  color: red;
+}

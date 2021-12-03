@@ -1,0 +1,97 @@
+.dropdown-container {
+  padding: 0 15px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+.dropdown-container span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #586069;
+  font-weight: 400;
+}
+.dropdown-container .icon {
+  margin-left: 3px;
+}
+.dropdown-container:hover span {
+  color: #24292e;
+}
+.dropdown-container:hover .icon {
+  color: #24292e;
+}
+.dropdown-container .dropdown-wrapper {
+  margin: 4px 0 20px;
+  width: 300px;
+  max-height: 500px;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 21px;
+  margin-left: -60px;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 3px;
+  box-shadow: 0 3px 12px rgba(27, 31, 35, 0.15);
+  background: white;
+  overflow-y: scroll;
+}
+.dropdown-container .dropdown-wrapper .header {
+  padding: 8px 10px;
+  line-height: 16px;
+  background: #f6f8fa;
+  border-bottom: 1px solid #e1e4e8;
+  font-size: 12px;
+  font-weight: 600;
+  color: #24292e;
+  text-align: left;
+}
+.dropdown-container .dropdown-wrapper .filter {
+  height: 35px;
+  background: #f6f8fa;
+  padding: 10px;
+}
+.dropdown-container .dropdown-wrapper .filter input {
+  display: block;
+  width: calc(100% - 10px);
+  max-width: calc(100% - 10px);
+  height: 25px;
+  padding: 5px;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+  margin: 0;
+  font-size: 14px;
+}
+.dropdown-container .dropdown-wrapper .list .item {
+  width: calc(100% - 38px);
+  height: 20px;
+  padding: 8px 8px 8px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #eaecef;
+}
+.dropdown-container .dropdown-wrapper .list .item span {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #586069;
+}
+.dropdown-container .dropdown-wrapper .list .item img {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+.dropdown-container .dropdown-wrapper .list .item .color {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: black;
+}
+.dropdown-container .dropdown-wrapper .list .item .check-icon {
+  margin-left: -20px;
+  margin-right: 4px;
+}
+.dropdown-container .dropdown-wrapper .list .item:hover {
+  background-color: #0366d6;
+}
+.dropdown-container .dropdown-wrapper .list .item:hover span {
+  color: #fff;
+}
